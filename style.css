@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+ .body {
+     font-family: 'Chelsea Market', cursive;
+     color: #2D3E50;
+ }
+ .wrapper {
+     max-width: 57%;
+     margin: auto;
+     text-align: center;
+ }
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+} 
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+.overlay    {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #2D3E50;
+    position: absolute;
+    opacity: .7;
+}
+.landing-text {
+    z-index: 2;
+    margin: auto auto ;
+    font-family: 'Chelsea Market', cursive;
+}
+.wrapper h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-weight: 200;
+    font-size: 250%;
+}
+.wrapper h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-weight: 100;
+    font-size: 200%;
+    margin-top: -0%;
+    margin-bottom: 3%;
+}
+.Highlight {
+    font-family: sans-serif;
+    color: rgb(6, 176, 255);
+}   
+.random {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    /* background: #031321; */
+    font-family: 'Chelsea Market', cursive;
+}
+.random a  {
+    position: relative;
+    display: inline-block ;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.random a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px  #2193f3 0 0, 40px  #2193f3, 0 0 80px  #2193f3;
+    transition-delay: 1s;
+}
+.random a span {
+    position: absolute;
+    display: block;
+}
+.random a span :nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.random a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+.random a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.random a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.random a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.random a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.random a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.random a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.navbar {
+    background: rgba(0,0,0,0.6);
+}
+.text {
+    font-family: 'Chelsea Market', cursive;
+}
+.nav-link   {
+    font-family: 'Chelsea Market', cursive;
+}
+.contact {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.one {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+
+}
+.two    {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #000;
+}
+.two:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 150px;
+    background: #000;
+    top: -60px;
+    left: 0;
+    transform: skewY(8deg);
+}
+.two:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 150px;
+    background: #000;
+    top: -60px;
+    right: 0;
+    transform: skewY(-8deg);
+}
+
+/* Form and social media section  */
+.body .middle {
+    padding: 0;
+    margin: 0;
+}
+.middle {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.middle .btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498bd;
+    overflow: hidden;
+    position: relative;
+}
+.middle .btn i {
+    line-height: 90px;
+    font-size: 26px;
+     transition: 0.2s linear;
+}
+.middle .btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.middle .btn::before {
+    content: "" ;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498bd ;
+    transform: rotate(45deg);
+    left: 110%;
+    top: 90%;
+}
+.middle .btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }50% {
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.send {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input {
+    height: 45px;
+}
+form .submit {
+    background-color: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    transition: 0.04s ease;
+}
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.gotopbtn {
+    position: sticky;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 60px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 40px;
+}
+html {
+    scroll-behavior: smooth;
+}
